@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<structure>
+	<type>fa</type>
+	<automaton>
+		<!-- q0 inicial, q1 intermedia, q2 final. L = (0+1)*01 = cadenas sobre {0,1} terminadas en 01 -->
+		<state id="0" name="q0">
+			<x>150.0</x>
+			<y>150.0</y>
+			<initial/>
+		</state>
+		<state id="1" name="q1">
+			<x>300.0</x>
+			<y>150.0</y>
+		</state>
+		<state id="2" name="q2">
+			<x>450.0</x>
+			<y>150.0</y>
+			<final/>
+		</state>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>1</read>
+		</transition>
+	</automaton>
+</structure>
